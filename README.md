@@ -24,7 +24,7 @@ Flask Note App — это простое веб-приложение для уп
 Склонируйте этот репозиторий на вашу локальную машину:
 
 ```bash
-git clone https://github.com/your_username/flask-note-app.git
+git clone https://github.com/artyoma2000/Note-App
 cd flask-note-app
 ```
 
