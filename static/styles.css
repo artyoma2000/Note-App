@@ -1,0 +1,206 @@
+/* Основные стили для всего тела */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для основного содержимого */
+.container {
+  margin-top: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* Стили для навигационных вкладок */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.tab-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-top: none;
+}
+
+/* Кнопки */
+.btn-primary, .btn-success {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Сообщения об ошибке */
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+/* Стили для блока с успешными сообщениями */
+.success-container {
+  padding-top: 100px;
+}
+
+/* Стиль для информационного блока */
+.jumbotron {
+  background-color: #ffffff; /* Цвет фона */
+  border: 1px solid #dddddd; /* Граница вокруг элемента */
+  border-radius: 0.5rem; /* Скругление углов */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Тень элемента */
+  padding: 20px;
+}
+
+/* Обновленные стили для ссылок */
+.navbar {
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: #0056b3;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Обновленные стили для форм */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+/* Обновленные стили для контейнера кнопок */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff; /* Белый фон */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Слегка более мягкая тень */
+  border-radius: 4px; /* Скругленные углы, но чуть менее выраженные */
+  overflow: hidden; /* Скрываем все, что выходит за границы */
+  padding: 5px 0; /* Добавляем немного пространства сверху и снизу */
+}
+
+/* Обновленные стили для кнопок внутри выпадающего меню */
+.dropdown-item {
+  display: block;
+  padding: 8px 20px; /* Немного уменьшаем отступы */
+  cursor: pointer;
+  color: #333; /* Темно-серый цвет текста */
+  border-bottom: 1px solid #eaeaea; /* Более светлая граница между кнопками */
+  font-size: 14px; /* Меньший размер шрифта */
+}
+
+.dropdown-item:last-child {
+  border-bottom: none; /* Убираем границу у последней кнопки */
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2; /* Еще более светлый фон при наведении */
+}
+
+/* Обновленные стили для троеточия, активирующего меню */
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 18px; /* Немного уменьшаем размер для более тонкого вида */
+  color: #0056b3; /* Цвет, более соответствующий стилю страницы */
+}
+
+/* Дополнительные стили для наведения */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
