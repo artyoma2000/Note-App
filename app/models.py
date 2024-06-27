@@ -1,5 +1,6 @@
 from app import db, login_manager
 from flask_login import UserMixin
+from datetime import datetime
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -16,3 +17,10 @@ class Note(db.Model):
     title = db.Column(db.String(100), nullable=False)
     content = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+
+class Session(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    session_token = db.Column(db.String(128), nullable=False, unique=True)
+    expiry_date = db.Column(db.DateTime, nullable=False)
+    user = db.relationship('User', backref=db.backref('sessions', lazy=True))
